@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title RebelOutpost
+    %link{href: "http://fonts.googleapis.com/css?family=Enriqueta", rel: "stylesheet", type: "text/css"}/
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .row
+      .container
+        .span4
+          #logo
+            = image_tag('rologo.png')
+        .span7
+          #nav
+            = render 'shared/navigation'
+    .row
+      = yield
+    .row#footer
+      = render 'shared/footer'

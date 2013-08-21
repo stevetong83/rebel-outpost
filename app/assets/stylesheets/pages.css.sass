@@ -1,0 +1,55 @@
+$dark-gray: #242424
+$white: #fff
+$blue: rgb(89, 206, 229)
+$font: #484848
+
+body 
+  background-image: url('background.png')
+  background-color: rgb(255, 253, 253)
+  color: $font
+  padding-top: 40px
+  font-family: Enriqueta, sans
+
+.center
+  text-align: center
+
+#nav
+  float: right
+  li 
+    float: left
+    margin-left: 30px
+    list-style-type: none
+    font-size: 1.8em
+    a 
+      color: $dark-gray
+      &:hover
+        color: $blue
+        text-decoration: none
+
+
+#home
+  margin-top: 40px
+
+  .title
+    font-size: 6.2em
+    line-height: 1.2em
+    text-transform: capitalize
+  #strip
+    padding: 25px 0
+    color: $white
+    background-color: $dark-gray
+    min-height: 250px
+    width: 100%
+    margin-top: 40px
+
+    p 
+      line-height: 2.0em
+      font-size: 1.2em
+      text-align: justify
+
+#social
+  text-align: center
+  li 
+    display: inline-block
+    list-style-type: none
+    padding: 5px
